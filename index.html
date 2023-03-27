@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <title>Tim Hortons Website Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" ><img src="logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not Just Coffee <br> It's <span>Tim Hortons</span></h2>
+        <p>In 1964, the first Tim Hortons® restaurant in Hamilton, Ontario 
+          opened its doors and Canadians have been ordering Tim Hortons iconic 
+          Original Blend coffee, Double-Double ™ coffees, Donuts and Timbits® 
+          ever since. Over the years, Tim Hortons has captured the hearts and taste
+          buds of Canadians.</p>
+          <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="img1.png" class="timhortons">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#d62020')"></li>
+      <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#8C795F')"></li>
+      <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#a4b49c')"></li>
+      <li><img src="thumb4.png" onclick="imgSlider('img4.png');changeCircleColor('#bf764e')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="facebook-logo-24.png"></li>
+      <li><a href="#"><img src="twitter-logo-24.png"></li>
+      <li><a href="#"><img src="instagram-logo-24 (1).png"></li>
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.timhortons').src = anything;
+    }
+
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
